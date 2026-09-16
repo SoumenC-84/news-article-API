@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "Default Dark Modern", // Your existing settings...
+
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.autoIndent": "advanced",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "yaml.completion": true,
+    "yaml.validate": true,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    }
+}
