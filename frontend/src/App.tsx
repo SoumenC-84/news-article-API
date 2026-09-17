@@ -58,7 +58,7 @@ function App() {
     <textarea
         placeholder="Paste your news article here..."
         value={article}
-        onChange={(event) => setArticle(event.target.value)}
+        onChange={(e) => setArticle(e.currentTarget.value)}
         rows={15}
         cols={80}
       />
