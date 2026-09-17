@@ -24,6 +24,28 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("ReactPolicy");
+app.UseExceptionHandler(errorApp =>
+{
+    errorApp.Run(async context =>
+    {
+        var exceptionHandlerPathFeature =
+            context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
+
+        var exception = exceptionHandlerPathFeature?.Error;
+
+        Console.WriteLine("===== EXCEPTION =====");
+        Console.WriteLine(exception?.ToString());
+        Console.WriteLine("=====================");
+
+        context.Response.StatusCode = 500;
+        context.Response.ContentType = "application/json";
+
+        await context.Response.WriteAsJsonAsync(new
+        {
+            error = exception?.Message
+        });
+    });
+});
 app.MapControllers();
 app.Run();
 

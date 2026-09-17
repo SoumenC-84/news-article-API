@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Default Dark Modern", // Your existing settings...
+    "workbench.colorTheme": "Dark Modern", // Your existing settings...
 
     "[yaml]": {
         "editor.tabSize": 2,
