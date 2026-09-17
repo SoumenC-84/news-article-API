@@ -17,7 +17,7 @@ function App() {
   try {
 
     const response = await fetch(
-      "http://localhost:5211/api/Chat",
+      "https://news-article-fubdend0h9awd5d7.westus3-01.azurewebsites.net/api/Chat",
       {
         method: "POST",
 
