@@ -38,4 +38,4 @@ jobs:
         with:
           app-name: news-article-ui
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_UI }}
-          package: ./frontend/dist
+          package: ./frontend
