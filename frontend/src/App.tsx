@@ -30,7 +30,7 @@ function App() {
     );
 
     if (!response.ok) {
-      throw new Error("API request failed");
+      throw new Error("API request failed-check the log");
     }
 
     const data = await response.json();
