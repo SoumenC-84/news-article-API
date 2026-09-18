@@ -35,4 +35,4 @@ jobs:
         with:
           app-name: ${{ secrets.news-article-ui }}
           publish-profile: ${{ secrets.ZURE_WEBAPP_PUBLISH_PROFILE_UI }}
-          package: ./frontend/dist
+          package: ./frontend/dist 
