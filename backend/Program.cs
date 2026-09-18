@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("ReactPolicy", builder =>
     {
-        builder.WithOrigins("https://news-article-ui-crg0gng4hhf2e0ad.centralindia-01.azurewebsites.net/")
+        builder.WithOrigins("https://news-article-ui-crg0gng4hhf2e0ad.centralindia-01.azurewebsites.net")
                .AllowAnyMethod()
                .AllowAnyHeader();
     });
