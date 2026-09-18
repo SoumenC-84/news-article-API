@@ -28,4 +28,11 @@ jobs:
       - name: Build
         run: dotnet build backend/news-article.csproj --no-restore --configuration Release
 
+      - name: Publish
+        run: dotnet publish backend/news-article.csproj --configuration Release --output ./publish
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-article-api
+          path: ./publish
