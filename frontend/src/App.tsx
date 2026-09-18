@@ -66,7 +66,7 @@ function App() {
       <br />
       <br />
 
-      <button onClick={(event)=>summarizeArticle()}>
+      <button onClick={summarizeArticle}>
         Summarize Article
       </button>
 
