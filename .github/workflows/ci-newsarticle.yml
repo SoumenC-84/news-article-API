@@ -34,3 +34,4 @@ jobs:
 
       - name: Test
         run: dotnet test backend/news-article.csproj --no-build --configuration Release
+        
